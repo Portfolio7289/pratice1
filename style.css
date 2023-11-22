@@ -1,0 +1,579 @@
+/* медиа-запросы */
+@media (max-width:1420px){
+    .main-container {
+        max-width: 970px;
+    }
+}
+@media (max-width:992px){
+    .main-container {
+        max-width: 750px;
+    }
+}
+@media (max-width:768px){
+    .main-container {
+        max-width: none;
+    }
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+}
+body {
+    max-height: 4000px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* основной контейнер для подключения адаптивной вёрстки */
+.main-container { 
+    padding-right: 5px;
+    padding-left: 5px;
+    max-width: 1420px;
+    margin: auto;
+}
+/* шапка сайта */
+header {
+background-color: #ffffff;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100px;
+z-index: 21;
+filter: drop-shadow(0px 0px 20px rgba(38, 38, 38, 0.16));
+}
+/* навигация сайта */
+.nav-container {
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav {
+    padding-bottom: 20px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 50px;
+    transition: transform 0.1s ease-in-out;
+}
+nav a:hover {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 50px;
+    transform: scale(1.1, 1.1);
+}
+.wrapper {
+    position: relative;
+    right: 110px;
+    top: 10px;
+}
+select {
+    position: absolute;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+option {
+    background-color: #E9ECE0;
+    color: gray;
+}
+.button1 {
+    background-color: #5B6460;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.button1 a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.button1:hover {
+    background-color: #5B6460;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    margin-top: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.1s;
+}
+.button1:active {
+    background-color: #3e4542;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* лого */
+.logo {
+    padding-top: 15px;
+}
+/* слайдер */
+.slider {
+    margin-top: 100px;
+    background: url(img/sliderpic.svg);
+    min-height: 900px;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+/* текст слайдера и позиционирование */
+.slidertext {
+    position: relative;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center
+}
+.text1 {
+    font-size: 70px;
+    line-height: 72px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+.text2 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+/* стрелочки слайдера */
+.arrowsimg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 650px;
+}
+.arrowsimg a {
+    padding-right: 50px;
+}
+/* немного позиционируем секцию */
+.thecabins {
+    margin-top: 200px;
+}
+/* текст секции */
+.textcabins {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 200px;
+}
+/* подзаголовок */
+.textcabins h2 {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 40px;
+    font-weight: 400;
+    color: #5B6460;
+    padding-bottom: 30px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+/* основной текст */
+.textcabins p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+/* ссылка под текстом */
+.textcabins a {
+    color: #5B6460;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    width: 80px;
+}
+/* основная картинка */
+.cabinspic {
+    float: right;
+    width: 693px;
+    min-height: 438;
+}
+/* блок с картинками */
+.hotelpic2 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 500px;
+    left: 90px;
+}
+/* картинки + анимация */
+.hotelpic2 img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 387px;
+    max-width: 432px;
+    transition: transform 0.3s ease-in-out;
+}
+/* анимация увеличения при наведении */
+.hotelpic2 img:hover {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 387px;
+    max-width: 432px;
+    transform: scale(1.2,1.2);
+}
+/* карта */
+.map {
+    margin-top: 600px;
+
+}
+/* делаем темную карту */
+.googlemap {
+    background-color: #3E443E;
+    width: 650px;
+    height: 450px;
+    margin-top: 100px;
+    position: relative;
+}
+.googlemap img {
+    width: 900px;
+    height: 450px;
+    opacity: 40%;
+    position: relative;
+}
+/* волшебная кнопка */
+.googlemap .button2 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: #FFFFFF;
+    color: #333333;
+    font-size: 14px;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s ease-in-out;
+    animation: pulse 2s linear infinite 1s;
+}
+/* волшебная кнопка, активная */
+.button2:active {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: #202020;
+    color:  #FFFFFF;
+    font-size: 14px;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: 0.1s;
+}
+/* анимация волшебной кнопки */
+.button2::after,
+.button2::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ffffff;
+    color: #333333;
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+        animation: pulse 2.5s linear infinite
+}
+.button2::after {
+    animation-delay: 2.5s;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+/* текст про лес */
+.theforest {
+    position: relative;
+    left: 500px;
+    bottom: 450px;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    padding-left: 200px;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E9ECE0;
+}
+/* подзаголовок */
+.theforest h2 {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 40px;
+    font-weight: 400;
+    color: #5B6460;
+    padding-bottom: 30px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+/* основной текст */
+.theforest p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+/* ссылка */
+.theforest a {
+    color: #5B6460;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    width: 80px;
+}
+/* блок с иконками и подписями */
+.facilities {
+    background-color: #5B6460;
+    position: relative;
+    bottom: 450px;
+    height: 474px;
+}
+.facilitiestext {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 50px;
+  }
+  
+figure {
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+  
+figure img {
+    width: 70px;
+    height: 70px;
+}
+.aboutus {
+    position: relative;
+    bottom: 450px;
+}
+.images {
+    display: flex; 
+    position: relative;
+    object-fit: scale-down;
+}
+.image4 {
+    background: url(img/leftpic.svg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.image5 {
+    background: url(img/rightpic.svg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttonround button {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    background-color: #E9ECE0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 157px;
+    height: 157px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonround button:hover {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    background-color: #333333;
+    color: #E9ECE0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 157px;
+    height: 157px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s linear;
+}
+.buttonround a {
+    text-decoration: none;
+    color: #333333;
+}
+footer {
+    background-color: #5B6460;
+    position: relative;
+    height: 450px;
+    bottom: 450px;
+    margin: auto;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+.newsletter p {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.emailinput{
+    padding-top: 50px;
+    border: none;
+    border-bottom: 1px solid #EFEFEF;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    width: 435px;
+    font-style: italic;
+    padding-bottom: 10px;
+    color: #fff;
+}
+::placeholder {
+    color: #EFEFEF;
+}
+form button {
+    border:1px solid #5B6460;
+    background-color: #5B6460;
+    color:white;
+    position: absolute;
+    left: 34%;
+    bottom: 55%;
+    cursor: pointer;
+}
+.footerfig {
+    text-align: left;
+    width: 30%;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 30%;
+}
+ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+    left: 1000px;
+    bottom: 200px;
+}
+.payment {
+    position: absolute;
+    left: 1280px;
+    bottom: 250px;
+}
+.payment img {
+    padding-right: 20px;
+}
+.AP {
+    padding-left: 230px;
+    position: absolute;
+    bottom: 100px;
+    color: rgb(169, 169, 169); 
+    font-weight: 300px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
